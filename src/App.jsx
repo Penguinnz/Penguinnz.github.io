@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import {HashRouter, Route, Routes } from "react-router-dom"
 import MainPage from "./pages/MainPage"
 import SobreNosotrosPage from "./pages/SobreNosotrosPage"
 import HambrePobrezaPage from "./pages/Estudios/HambrePobrezaPage"
@@ -13,7 +13,7 @@ import ComunionPage from "./pages/AreasDeTrabajo/ComunionPage"
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
         
@@ -36,7 +36,7 @@ const App = () => {
         <Route path = "/comunion" element={<ComunionPage/>} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
         
   )
 }

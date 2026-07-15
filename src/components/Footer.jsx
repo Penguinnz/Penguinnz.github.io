@@ -2,6 +2,7 @@ import { Col, Container, Nav, Row, Stack } from "react-bootstrap"
 import LogoCaritas from '../public/Caritas-Costa-Rica-logo.png';
 
 import FacebookIcon from '../public/facebook-icon.png';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,11 +24,11 @@ const Footer = () => {
                 <Col>
                     <h4>Links</h4>
                     <Nav className="flex-column">
-                        <Nav.Link href="/sobre-nosotros" className="text-white">Sobre Nosotros</Nav.Link>
+                        <Nav.Link as={Link} to="/sobre-nosotros" className="text-white">Sobre Nosotros</Nav.Link>
 
-                        <Nav.Link href="/contacto" className="text-white">Contacto</Nav.Link>
+                        <Nav.Link as={Link} to="/contacto" className="text-white">Contacto</Nav.Link>
 
-                        <Nav.Link href="/biblioteca" className="text-white">Biblioteca</Nav.Link>
+                        <Nav.Link as={Link} to="/biblioteca" className="text-white">Biblioteca</Nav.Link>
 
                     </Nav>
                 </Col>
@@ -36,13 +37,13 @@ const Footer = () => {
                     <h4>Áreas de Trabajo</h4>
                     <Nav className="flex-column">
 
-                        <Nav.Link href="/derechos-humanos" className="text-white">Derechos Humanos</Nav.Link>
+                        <Nav.Link as={Link} to="/derechos-humanos" className="text-white">Derechos Humanos</Nav.Link>
 
-                        <Nav.Link href="/institucional" className="text-white">Vida Institucional</Nav.Link>
+                        <Nav.Link as={Link} to="/institucional" className="text-white">Vida Institucional</Nav.Link>
 
-                        <Nav.Link href="/ecologia" className="text-white">Ecologia</Nav.Link>
+                        <Nav.Link as={Link} to="/ecologia" className="text-white">Ecologia</Nav.Link>
 
-                        <Nav.Link href="/comunion" className="text-white">Comunion Caritas Internationalis</Nav.Link>
+                        <Nav.Link as={Link} to="/comunion" className="text-white">Comunion Caritas Internationalis</Nav.Link>
 
 
                     </Nav>
@@ -52,9 +53,9 @@ const Footer = () => {
                     <h4>Estudios</h4>
                     <Nav className="flex-column">
 
-                        <Nav.Link href="/hambre-pobreza" className="text-white">Hambre y Pobreza</Nav.Link>
+                        <Nav.Link as={Link} to="/hambre-pobreza" className="text-white">Hambre y Pobreza</Nav.Link>
 
-                        <Nav.Link href="/infancia" className="text-white">Infancia</Nav.Link>
+                        <Nav.Link as={Link} to="/infancia" className="text-white">Infancia</Nav.Link>
 
                     </Nav>
                 </Col>
