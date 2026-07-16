@@ -1,6 +1,7 @@
 import '../../styles/style.css'
 import FadeIn from '../../styles/FadeIn'
 import { Church, Globe, PersonStanding, Sprout } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 
 const AreasDeTrabajo = () => {
@@ -53,11 +54,13 @@ const AreasDeTrabajo = () => {
           <div className="valores-grid">
             {ejes.map((e, i) => (
               <FadeIn key={e.titulo} delay={i * 0.07}>
+                
+                <Link to={e.href} style={{ textDecoration: 'none', color: 'inherit' }}>
+
                 <div
                   className="valor-card "
                   style={{ "--vc": e.color,
                             cursor:'pointer'}}
-                  onClick={()=> {window.location.href=e.href}}
                 >
 
                   <span className="valor-icon">{e.icono}</span>
@@ -65,6 +68,7 @@ const AreasDeTrabajo = () => {
                   <h3>{e.titulo}</h3>
                   <p>{e.desc}</p>
                 </div>
+                </Link>
               </FadeIn>
             ))}
           </div>

@@ -2,6 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import LogoCaritas from '../../public/Caritas-Costa-Rica-logo.png';
 import ejemplo2 from '../../public/Ejemplo2.jpg';
 import '../../styles/style.css'
+import { Link } from 'react-router-dom';
 
 function Galeria() {
 
@@ -30,10 +31,12 @@ function Galeria() {
     <Carousel slide interval={3000} variant="light">
 
       {carousel.map((item, index) => (
+
+        
         <Carousel.Item key={index} 
-        onClick={()=> {window.location.href=item.href}}
         style={{cursor: 'pointer'}}>
 
+        <Link to={item.href} style={{ textDecoration: 'none', color: 'inherit' }}>
           <img
             className="d-block w-100"
             src={item.img}
@@ -54,7 +57,7 @@ function Galeria() {
             )}
 
           </Carousel.Caption>
-
+        </Link>
         </Carousel.Item>
       ))}
 

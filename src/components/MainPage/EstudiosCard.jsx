@@ -1,6 +1,7 @@
 import { Card} from 'react-bootstrap';
 import '../../styles/style.css'
 import FadeIn from '../../styles/FadeIn';
+import { Link } from 'react-router-dom';
 
 function EstudiosCard() {
   const programas = [
@@ -29,11 +30,12 @@ function EstudiosCard() {
       {programas.map((programa) => (
         
         <FadeIn>
+
+          <Link to={programa.href} style={{ textDecoration: 'none', color: 'inherit' }}>
           <Card className='h-100 shadow valores-card'
           style={{ transition: 'transform 0.2s, box-shadow 0.2s', cursor: 'pointer' }}
                   onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'}
                   onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
-                  onClick={()=> {window.location.href=programa.href}}
                   >
             <Card.Img
               variant="top"
@@ -46,6 +48,7 @@ function EstudiosCard() {
               </Card.Text>
             </Card.Body>
           </Card>
+          </Link>
           </FadeIn>
       ))}
     </div>
