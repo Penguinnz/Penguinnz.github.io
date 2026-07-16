@@ -28,7 +28,7 @@ function Galeria() {
   ];
 
   return (
-    <Carousel slide interval={3000} variant="light">
+    <Carousel slide interval={5000} variant="light">
 
       {carousel.map((item, index) => (
 
