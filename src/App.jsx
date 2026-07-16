@@ -9,11 +9,16 @@ import DerechosHumanosPage from "./pages/AreasDeTrabajo/DerechosHumanosPage"
 import InstitucionalPage from "./pages/AreasDeTrabajo/InstitucionalPage"
 import EcologiaPage from "./pages/AreasDeTrabajo/EcologiaPage"
 import ComunionPage from "./pages/AreasDeTrabajo/ComunionPage"
+import ScrollToTop from "./components/ScrollToTop"
 
 
 const App = () => {
+  
   return (
+
+    
     <HashRouter>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<MainPage />} />
         
