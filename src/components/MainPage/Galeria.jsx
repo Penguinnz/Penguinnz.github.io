@@ -8,7 +8,7 @@ function Galeria() {
 
   const carousel = [
     {
-      img: LogoCaritas,
+      img: "https://scontent.fsyq8-1.fna.fbcdn.net/v/t39.99422-6/730748984_989423130361797_6463644934602541333_n.png?stp=dst-jpg_tt6&cstp=mx1309x775&ctp=s1309x775&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=iATHPwzBKFsQ7kNvwHPy7Jg&_nc_oc=AdpHg9W98Y0eBXHVgCYh-uUkksMZzrK6q5CmeSGrPZ28tP-Ro2MlF4eWd7lgvvqsVt4&_nc_zt=14&_nc_ht=scontent.fsyq8-1.fna&_nc_gid=crcuK-IPJCWlod90kkGG9g&_nc_ss=7a289&oh=00_AQAf041wHEnivjcWT2KxUjAyM8HdqVvVSE8ClZ2GL6tYUQ&oe=6A683484",
       titulo: 'Cáritas Costa Rica',
       desc: 'Construyendo esperanza y solidaridad.',
       href: '/'
@@ -28,6 +28,7 @@ function Galeria() {
   ];
 
   return (
+
     <Carousel slide interval={5000} variant="light">
 
       {carousel.map((item, index) => (

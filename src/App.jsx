@@ -10,6 +10,7 @@ import InstitucionalPage from "./pages/AreasDeTrabajo/InstitucionalPage"
 import EcologiaPage from "./pages/AreasDeTrabajo/EcologiaPage"
 import ComunionPage from "./pages/AreasDeTrabajo/ComunionPage"
 import ScrollToTop from "./components/ScrollToTop"
+import NovedadesPage from "./pages/NovedadesPage"
 
 
 const App = () => {
@@ -39,6 +40,8 @@ const App = () => {
         <Route path = "/ecologia" element={<EcologiaPage/>} />
 
         <Route path = "/comunion" element={<ComunionPage/>} />
+
+        <Route path = "/novedades" element={<NovedadesPage/>} />
 
       </Routes>
     </HashRouter>

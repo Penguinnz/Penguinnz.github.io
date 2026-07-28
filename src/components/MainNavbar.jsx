@@ -63,13 +63,27 @@ const MainNavbar = () => {
 
             </NavDropdown>
 
+            <Nav.Link as={Link} to="/novedades">
+              Novedades
+            </Nav.Link>
+
+            <Nav.Link as={Link} to="/contacto">
+              Programa Somos Caritas
+            </Nav.Link>
+
             <Nav.Link as={Link} to="/contacto">
               Contacto
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/biblioteca">
-              Biblioteca
-            </Nav.Link>
+            <NavDropdown title="Biblioteca">
+              <NavDropdown.Item as={Link} to="/biblioteca">
+                Documentos
+              </NavDropdown.Item>
+
+              <NavDropdown.Item as={Link} to="https://online.fliphtml5.com/TCUULACIT/Salud-bucodental-para-todos-_compressed/#p=1">
+                Salud Bucodental
+              </NavDropdown.Item>
+            </NavDropdown>
 
             <a
               href="https://www.facebook.com/caritascostarica/"
