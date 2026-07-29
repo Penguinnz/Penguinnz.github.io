@@ -1,6 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
 import LogoCaritas from '../../public/Caritas-Costa-Rica-logo.png';
-import ejemplo2 from '../../public/Ejemplo2.jpg';
 import '../../styles/style.css'
 import { Link } from 'react-router-dom';
 
@@ -8,17 +7,12 @@ function Galeria() {
 
   const carousel = [
     {
-      img: "https://scontent.fsyq8-1.fna.fbcdn.net/v/t39.99422-6/730748984_989423130361797_6463644934602541333_n.png?stp=dst-jpg_tt6&cstp=mx1309x775&ctp=s1309x775&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=iATHPwzBKFsQ7kNvwHPy7Jg&_nc_oc=AdpHg9W98Y0eBXHVgCYh-uUkksMZzrK6q5CmeSGrPZ28tP-Ro2MlF4eWd7lgvvqsVt4&_nc_zt=14&_nc_ht=scontent.fsyq8-1.fna&_nc_gid=crcuK-IPJCWlod90kkGG9g&_nc_ss=7a289&oh=00_AQAf041wHEnivjcWT2KxUjAyM8HdqVvVSE8ClZ2GL6tYUQ&oe=6A683484",
+      img: "https://scontent.fsyq8-1.fna.fbcdn.net/v/t39.99422-6/730748984_989423130361797_6463644934602541333_n.png?stp=dst-jpg_tt6&cstp=mx1309x775&ctp=s1309x775&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=odCYHXEN3c8Q7kNvwF5s8hJ&_nc_oc=Adq3nJfLJjkxi4jiyrMqN9yLHZiBeNoDaL8mR4ARglnMOc3lEsxeoEZgRj8Rp14MrdU&_nc_zt=14&_nc_ht=scontent.fsyq8-1.fna&_nc_gid=8EOeN5g6M6JdVTqFB-VBjg&_nc_ss=7a2a8&oh=00_AQA0IywUzq0tkkXv7rbxDAHuQG-flOQCa-_BJMrKxVv1Tw&oe=6A6E93C4",
       titulo: 'Cáritas Costa Rica',
       desc: 'Construyendo esperanza y solidaridad.',
       href: '/'
     },
-    {
-      img: ejemplo2,
-      titulo: 'Hambre y Pobreza',
-      desc: 'Conoce nuestro estudio sobre el hambre y la pobreza en Costa Rica ',
-      href: '/hambre-pobreza'
-    },
+    
     {
       img: 'https://tse1.mm.bing.net/th/id/OIP.eYAFT3a7C3HpXtBj8YVQCwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3',
       titulo: 'Somos Cáritas',

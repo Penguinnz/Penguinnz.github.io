@@ -8,12 +8,6 @@ const ProgramaPage = () => {
     <div>
         <MainNavbar/>
 
-        <div className="sn-root">
-        <section className="sn-hero">
-          <h1>Programa <em>Somos Caritas</em></h1>
-        </section>
-      </div>
-
         <Videos/>
 
         <Footer/>

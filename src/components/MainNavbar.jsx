@@ -61,6 +61,10 @@ const MainNavbar = () => {
 
             </NavDropdown>
 
+            <Nav.Link as={Link} to="/novedades">
+              Novedades
+            </Nav.Link>
+
             <Nav.Link as={Link} to= "/programa-somos-caritas">
               Programa Somos Caritas
             </Nav.Link>

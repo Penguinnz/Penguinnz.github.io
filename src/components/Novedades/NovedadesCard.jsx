@@ -13,8 +13,8 @@ const NovedadesCard = () => {
   return (
     
     <div>
-        {Noticias.map( )
-}
+
+
 
 
 
