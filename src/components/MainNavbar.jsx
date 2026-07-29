@@ -4,13 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import LogoCaritas from '../public/Caritas-Costa-Rica-logo.png';
 import FacebookIcon from '../public/facebook-icon.png';
+import { Link } from 'react-router-dom';
 
 const MainNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
         
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <img 
           src={LogoCaritas}
           alt="Logo de Cáritas" 
@@ -24,25 +25,25 @@ const MainNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto fw-bold">
 
-            <Nav.Link href= "/sobre-nosotros">
+            <Nav.Link as={Link} to="/sobre-nosotros">
               Sobre Nosotros
             </Nav.Link>
 
             <NavDropdown title="Áreas de Trabajo" id="basic-nav-dropdown">
 
-              <NavDropdown.Item href="/derechos-humanos">
+              <NavDropdown.Item as={Link} to="/derechos-humanos">
                 Derechos Humanos
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/institucional">
+              <NavDropdown.Item as={Link} to="/institucional">
                 Vida Institucional
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/ecologia">
+              <NavDropdown.Item as={Link} to="/ecologia">
                 Ecología
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/comunion">
+              <NavDropdown.Item as={Link} to="/comunion">
                 Comunion Caritas Internationalis
               </NavDropdown.Item>
 
@@ -50,26 +51,26 @@ const MainNavbar = () => {
 
             <NavDropdown title="Estudios" id="basic-nav-dropdown">
 
-              <NavDropdown.Item href="/hambre-pobreza">
+              <NavDropdown.Item as={Link} to="/hambre-pobreza">
                 Hambre y Pobreza
               </NavDropdown.Item>
 
-              <NavDropdown.Item href="/infancia">
+              <NavDropdown.Item as={Link} to="/infancia">
                 Infancia
               </NavDropdown.Item>
 
             </NavDropdown>
 
-            <Nav.Link href = "/programa-somos-caritas">
+            <Nav.Link as={Link} to= "/programa-somos-caritas">
               Programa Somos Caritas
             </Nav.Link>
 
-            <Nav.Link href="/contacto">
+            <Nav.Link as={Link} to="/contacto">
               Contacto
             </Nav.Link>
 
             <NavDropdown title="Biblioteca" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/biblioteca">
+              <NavDropdown.Item as={Link} to="/biblioteca">
                 Documentos
               </NavDropdown.Item>
 
