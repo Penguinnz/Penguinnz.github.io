@@ -1,25 +1,22 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-
-import { Link } from "react-router-dom";
-
-import LogoCaritas from "../public/Caritas-Costa-Rica-logo.png";
-import FacebookIcon from "../public/facebook-icon.png";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import LogoCaritas from '../public/Caritas-Costa-Rica-logo.png';
+import FacebookIcon from '../public/facebook-icon.png';
 
 const MainNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-
-        <Navbar.Brand as={Link} to="/">
-          <img
-            src={LogoCaritas}
-            alt="Logo de Cáritas"
-            width="120"
-            height="120"
-          />
+        
+        <Navbar.Brand href="/">
+          <img 
+          src={LogoCaritas}
+          alt="Logo de Cáritas" 
+          width="120" 
+          height="120" 
+          className="d-inline-block align-top" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -27,81 +24,72 @@ const MainNavbar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto fw-bold">
 
-            <Nav.Link as={Link} to="/sobre-nosotros">
+            <Nav.Link href= "/sobre-nosotros">
               Sobre Nosotros
             </Nav.Link>
 
-            <NavDropdown title="Áreas de Trabajo" id="areas-dropdown">
+            <NavDropdown title="Áreas de Trabajo" id="basic-nav-dropdown">
 
-              <NavDropdown.Item as={Link} to="/derechos-humanos">
+              <NavDropdown.Item href="/derechos-humanos">
                 Derechos Humanos
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/institucional">
+              <NavDropdown.Item href="/institucional">
                 Vida Institucional
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/ecologia">
+              <NavDropdown.Item href="/ecologia">
                 Ecología
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/comunion">
-                Comunión Caritas Internationalis
+              <NavDropdown.Item href="/comunion">
+                Comunion Caritas Internationalis
               </NavDropdown.Item>
 
             </NavDropdown>
 
-            <NavDropdown title="Estudios" id="estudios-dropdown">
+            <NavDropdown title="Estudios" id="basic-nav-dropdown">
 
-              <NavDropdown.Item as={Link} to="/hambre-pobreza">
+              <NavDropdown.Item href="/hambre-pobreza">
                 Hambre y Pobreza
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="/infancia">
+              <NavDropdown.Item href="/infancia">
                 Infancia
               </NavDropdown.Item>
 
             </NavDropdown>
 
-            <Nav.Link as={Link} to="/novedades">
-              Novedades
-            </Nav.Link>
-
-            <Nav.Link as={Link} to="/contacto">
+            <Nav.Link href = "/programa-somos-caritas">
               Programa Somos Caritas
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/contacto">
+            <Nav.Link href="/contacto">
               Contacto
             </Nav.Link>
 
-            <NavDropdown title="Biblioteca">
-              <NavDropdown.Item as={Link} to="/biblioteca">
+            <NavDropdown title="Biblioteca" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/biblioteca">
                 Documentos
               </NavDropdown.Item>
 
-              <NavDropdown.Item as={Link} to="https://online.fliphtml5.com/TCUULACIT/Salud-bucodental-para-todos-_compressed/#p=1">
+              <NavDropdown.Item href="https://online.fliphtml5.com/TCUULACIT/Salud-bucodental-para-todos-_compressed/#p=1">
                 Salud Bucodental
               </NavDropdown.Item>
+
             </NavDropdown>
 
-            <a
-              href="https://www.facebook.com/caritascostarica/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ms-3"
-            >
-              <img
-                src={FacebookIcon}
-                alt="Facebook"
-                width="40"
-                height="40"
-              />
-            </a>
+            <Nav.Link href="https://www.facebook.com/caritascostarica/">
+            <img
+              src={FacebookIcon}
+              alt="Facebook"
+              width="60"
+              height="60"
+            />
+            </Nav.Link>
 
           </Nav>
         </Navbar.Collapse>
-
       </Container>
     </Navbar>
   );
