@@ -11,6 +11,7 @@ import EcologiaPage from "./pages/AreasDeTrabajo/EcologiaPage"
 import ComunionPage from "./pages/AreasDeTrabajo/ComunionPage"
 import ScrollToTop from "./components/ScrollToTop"
 import NovedadesPage from "./pages/NovedadesPage"
+import ProgramaPage from "./pages/ProgramaPage"
 
 
 const App = () => {
@@ -42,6 +43,9 @@ const App = () => {
         <Route path = "/comunion" element={<ComunionPage/>} />
 
         <Route path = "/novedades" element={<NovedadesPage/>} />
+
+        <Route path = "/programa-somos-caritas" element={<ProgramaPage/>}/>
+
 
       </Routes>
     </HashRouter>
