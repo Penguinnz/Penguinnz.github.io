@@ -1,6 +1,4 @@
 import '../../styles/style.css';
-import Footer from '../Footer';
-import MainNavbar from '../MainNavbar';
 
 /**
  * Lista de videos a mostrar. Para agregar uno nuevo solo hace falta
@@ -53,7 +51,7 @@ const Videos = () => {
                       allowFullScreen
                     />
                   ) : (
-                    // Mientras no se defina un youtubeId, se enlaza al canal
+                    
                     <a
                       href={CANAL_URL}
                       target="_blank"
@@ -85,15 +83,13 @@ const Videos = () => {
               href={CANAL_URL}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-primary"
+              className="btn btn-rojo"
             >
               Ver todos los videos en YouTube
             </a>
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
