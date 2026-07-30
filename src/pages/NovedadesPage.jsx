@@ -9,7 +9,11 @@ const NovedadesPage = () => {
 
       <div className="sn-root">
         <section className="sn-hero">
-          <h1>Novedades</h1>
+          <h1><em>Novedades</em></h1>
+          <p className="sn-hero-sub">
+            Noticias de Cáritas Costa Rica y de la red regional e
+            internacional de Cáritas.
+          </p>
         </section>
       </div>
 

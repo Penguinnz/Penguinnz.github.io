@@ -75,7 +75,7 @@ const BibliotecaPage = () => {
           href={documento.archivo}
           target="_blank"
           rel="noreferrer"
-          className="btn btn-primary mt-3"
+          className="btn btn-rojo mt-3"
         >
           Ver documento
         </a>
