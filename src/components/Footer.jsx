@@ -26,9 +26,13 @@ const Footer = () => {
                     <Nav className="flex-column">
                         <Nav.Link as={Link} to="/sobre-nosotros" className="text-white">Sobre Nosotros</Nav.Link>
 
-                        <Nav.Link as={Link} to="/contacto" className="text-white">Contacto</Nav.Link>
+                        <Nav.Link as={Link} to="/novedades" className="text-white">Novedades</Nav.Link>
+
+                        <Nav.Link as={Link} to="/programa-somos-caritas" className="text-white">Programa Somos Caritas</Nav.Link>
 
                         <Nav.Link as={Link} to="/biblioteca" className="text-white">Biblioteca</Nav.Link>
+                        
+                        <Nav.Link as={Link} to="/contacto" className="text-white">Contacto</Nav.Link>
 
                     </Nav>
                 </Col>
