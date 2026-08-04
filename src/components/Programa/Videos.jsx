@@ -16,7 +16,7 @@ const videos = [
   },
 ];
 
-const CANAL_URL = "https://www.youtube.com/@pastoralsocialcaritascosta609";
+const CANAL_URL = "https://www.bing.com/ck/a?!&&p=73920912206764e6c0583cad1a4e5004bbf26b178e1b8ef331896c1470bb59f9JmltdHM9MTc4NTgwMTYwMA&ptn=3&ver=2&hsh=4&fclid=057419a0-7d75-6532-2195-0dad7ccb6493&psq=somos+caritas+youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj11c1phZDhCRzhKVQ";
 
 const Videos = () => {
   return (
@@ -66,7 +66,7 @@ const Videos = () => {
                         textDecoration: "none",
                       }}
                     >
-                      Ver canal de YouTube
+                      Ver canal de Youtube
                     </a>
                   )}
                 </div>
