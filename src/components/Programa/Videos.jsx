@@ -1,22 +1,22 @@
 import '../../styles/style.css';
 
-/**
- * Lista de videos a mostrar. Para agregar uno nuevo solo hace falta
- * copiar el "id" del video de YouTube (la parte que va despues de
- * "v=" en la URL, por ejemplo en
- * https://www.youtube.com/watch?v=XXXXXXXXXXX el id es XXXXXXXXXXX)
- * y agregar un objeto nuevo a este arreglo.
+/*
+  Lista de videos a mostrar. Para agregar uno nuevo
+  copiar el "id" del video de YouTube (la parte que va despues de
+  "v=" en la URL, por ejemplo en
+  https://www.youtube.com/watch?v=XXXXXXXXXXX el id es XXXXXXXXXXX)
+  y agregar un objeto nuevo a este arreglo.
  */
 const videos = [
   {
-    titulo: "Canal de Cáritas Costa Rica",
+    titulo: "Somos Caritas",
     descripcion:
-      "Suscríbete al canal oficial de Pastoral Social Cáritas Costa Rica para ver todos los videos de la organización.",
-    youtubeId: "", // <-- pegar aqui el id del video que se quiera destacar
+      "Siguenos en el canal de Radio Fides para ver nuestro programa Somos Caritas.",
+    youtubeId: "", // pegar aca el id del video que se quiere mostrar
   },
 ];
 
-const CANAL_URL = "https://www.bing.com/ck/a?!&&p=73920912206764e6c0583cad1a4e5004bbf26b178e1b8ef331896c1470bb59f9JmltdHM9MTc4NTgwMTYwMA&ptn=3&ver=2&hsh=4&fclid=057419a0-7d75-6532-2195-0dad7ccb6493&psq=somos+caritas+youtube&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g_dj11c1phZDhCRzhKVQ";
+const CANAL_URL = "https://www.youtube.com/watch?v=usZad8BG8JU";
 
 const Videos = () => {
   return (
@@ -25,10 +25,9 @@ const Videos = () => {
       <div className="sn-root">
         <section
           className="sn-hero"
-          
         >
           <h1>
-            Programa <em>Somos Caritas</em>
+            Programa<em> Somos Caritas</em>
           </h1>
           <p className="sn-hero-sub">
             Conoce el trabajo de Cáritas Costa Rica a través de nuestro
@@ -51,13 +50,17 @@ const Videos = () => {
                       allowFullScreen
                     />
                   ) : (
-                    
+                    // Mientras no se defina un youtubeId, se enlaza al canal
                     <a
                       href={CANAL_URL}
                       target="_blank"
                       rel="noreferrer"
-                      className="video-embed"
                       style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
@@ -66,7 +69,7 @@ const Videos = () => {
                         textDecoration: "none",
                       }}
                     >
-                      Ver canal de Youtube
+                      Ver canal de YouTube
                     </a>
                   )}
                 </div>

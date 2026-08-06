@@ -125,7 +125,7 @@ function InfanciaEntornoSocial() {
           </div>
         )}
 
-        {/* Cita / desafío pastoral */}
+        
         <div style={{
           marginTop: 28, background: "#0D2B4E", borderRadius: 8, padding: "28px 32px",
           display: "flex", gap: 20, alignItems: "flex-start", flexWrap: "wrap",

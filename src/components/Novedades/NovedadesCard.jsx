@@ -1,5 +1,10 @@
 import '../../styles/style.css';
-import Noticia1 from '../../public/Noticia1.png' ;
+
+
+import Noticia1 from '../../public/noticias/Noticia1.png' ;
+import Noticia2 from '../../public/noticias/Noticia2.jpg'
+import Noticia3 from '../../public/noticias/Noticia3.jpg'
+import FadeIn from '../../styles/FadeIn';
 
 const noticias = [
   {
@@ -14,12 +19,37 @@ const noticias = [
     enlace:
       "https://caritaslatinoamerica.org/es/historias/la-zona-camex-se-fortalece-en-panama-rumbo-al-xxi-congreso-regional-de-caritas-en-brasil",
   },
+  {
+    titulo:
+      "Cáritas LAC fortalece su respuesta regional y espiritualidad en encuentro estratégico en Bogotá",
+    fuente: "Cáritas América Latina y el Caribe",
+    fecha: "26 de febrero de 2026",
+    resumen:
+    "los equipos regionales de MAGRE (Medio Ambiente, Gestión de Riesgos y Emergencias) y Ecología Integral e Identidad y Espiritualidad se reunieron en Bogotá para talleres presenciales de sus equipos.",
+    imagen:
+      Noticia2,
+    enlace:
+      "https://caritaslatinoamerica.org/es/historias/caritas-lac-fortalece-su-respuesta-regional-y-espiritualidad-en-encuentro-estrategico-en-bogota",
+  },
+  {
+    titulo:
+      "Cáritas América Latina y el Caribe avanza en la implementación de sus Estándares de Gestión",
+    fuente: "Cáritas América Latina y el Caribe",
+    fecha: "1 de octubre de 2025",
+    resumen:
+      "Cáritas América Latina y el Caribe continúa dando pasos firmes en la implementación de los Estándares de Gestión de Cáritas Internationalis (EGCI), un marco que fortalece la transparencia, la participación, la responsabilidad y la salvaguardia en la misión que la Iglesia realiza a través de sus Cáritas nacionales.",
+    imagen:
+      Noticia3,
+    enlace:
+      "https://caritaslatinoamerica.org/es/historias/caritas-america-latina-y-el-caribe-avanza-en-la-implementacion-de-sus-estandares-de-gestion",
+  },
 ];
  
 const NoticiasPage = () => {
   return (
     <div>
  
+    <FadeIn>
       <section className="sn-section">
         <div className="obj-inner">
           <div className="noticias-lista">
@@ -51,6 +81,7 @@ const NoticiasPage = () => {
           </div>
         </div>
       </section>
+      </FadeIn>
  
     </div>
   );
